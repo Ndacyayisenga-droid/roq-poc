@@ -1,0 +1,21 @@
+# Nav: Home (index) then doc pages
+items:
+  - title: "Home"
+    path: "/"
+    icon: "fa-solid fa-home"
+  - title: "Documentation"
+    path: "/docs/"
+    icon: "fa-solid fa-book"
+    items:
+      - title: "Getting Started"
+        path: "/docs/getting-started/"
+        icon: "fa-solid fa-rocket"
+      - title: "Code Examples"
+        path: "/docs/code-examples/"
+        icon: "fa-solid fa-code"
+      - title: "Accessibility"
+        path: "/docs/accessibility/"
+        icon: "fa-solid fa-universal-access"
+      - title: "AsciiDoc-style example"
+        path: "/docs/asciidoc-example/"
+        icon: "fa-solid fa-file-lines"

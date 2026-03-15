@@ -1,0 +1,22 @@
+# Build
+target/
+temp-root/
+
+# Quarkus
+.quarkus/
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Env
+.env
+.env.local

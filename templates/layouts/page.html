@@ -1,0 +1,102 @@
+{@io.quarkiverse.roq.frontmatter.runtime.model.Site site}
+{@java.util.List<io.vertx.core.json.JsonObject> menu}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{page.title}</title>
+
+    <link rel="stylesheet" href="{site.url}css/docusaurus-style.css">
+    <link rel="stylesheet" href="{site.url}css/layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="layout">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="{site.url}" class="navbar-brand">
+                    <span class="navbar-title">Roq POC</span>
+                </a>
+                <button class="mobile-menu-toggle" onclick="toggleSidebar()">☰</button>
+                <ul class="navbar-nav">
+                    <li><a href="{site.url}docs/">Documentation</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="main-wrapper">
+            <aside class="sidebar" id="sidebar">
+                <div class="sidebar-content">
+                    <ul class="sidebar-nav">
+                        {#for item in cdi:menu.items}
+                        <li class="sidebar-menu">
+                            <a href="{site.url(item.path)}" class="sidebar-section-title">{item.title}</a>
+                            {#if item.get("items")}
+                            <ul class="sidebar-nav">
+                                {#for subitem in item.items}
+                                <li class="sidebar-submenu">
+                                    <a href="{site.url(subitem.path)}" class="sidebar-submenu-title">{subitem.title}</a>
+                                </li>
+                                {/for}
+                            </ul>
+                            {/if}
+                        </li>
+                        {/for}
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <div class="content-wrapper">
+                    {#insert /}
+                </div>
+            </main>
+
+            <aside class="toc" id="toc">
+                <div class="toc-title">On this page</div>
+                <ul class="toc-nav" id="toc-nav"></ul>
+            </aside>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <h4>Docs</h4>
+                        <ul>
+                            <li><a href="{site.url}docs/getting-started/">Getting Started</a></li>
+                            <li><a href="{site.url}docs/code-examples/">Code Examples</a></li>
+                            <li><a href="{site.url}docs/accessibility/">Accessibility</a></li>
+                            <li><a href="{site.url}docs/asciidoc-example/">AsciiDoc-style example</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Built with</h4>
+                        <ul>
+                            <li><a href="https://iamroq.com/">Quarkus Roq</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>Roq POC Documentation. Built with ROQ.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-clike.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-yaml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-powershell.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-line-numbers.min.js"></script>
+    <script src="{site.url}js/syntax-highlighting.js"></script>
+    <script src="{site.url}js/layout.js"></script>
+</body>
+</html>

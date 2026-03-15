@@ -1,0 +1,13 @@
+# Required for Roq default theme: post.html uses {cdi:authors.get(page.data.author)}
+# Without this file, the @Named("authors") bean is not created and Qute fails at build time.
+
+default:
+  name: "Roq POC"
+  bio: "Documentation proof of concept"
+  avatar: ""
+  github: ""
+
+roq-poc:
+  name: "Roq POC"
+  bio: "Documentation site with Quarkus Roq"
+  avatar: ""
