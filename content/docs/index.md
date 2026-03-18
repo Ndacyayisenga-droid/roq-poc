@@ -10,16 +10,16 @@ Welcome to the Roq POC docs. Use the sidebar or the links below to navigate.
 
 ## Getting Started
 
-[Jumping in](/docs/getting-started/) — Prerequisites, run locally, build static site, project structure.
+[Jumping in]({site.url('/docs/getting-started/')}) — Prerequisites, run locally, build static site, project structure.
 
 ## Code Examples
 
-[Code Examples](/docs/code-examples/) — Java, YAML, Bash, language-style tabs, Mermaid diagrams, tables.
+[Code Examples]({site.url('/docs/code-examples/')}) — Java, YAML, Bash, language-style tabs, Mermaid diagrams, tables.
 
 ## Accessibility
 
-[Accessibility](/docs/accessibility/) — Layout, keyboard navigation, headings, responsive design.
+[Accessibility]({site.url('/docs/accessibility/')}) — Layout, keyboard navigation, headings, responsive design.
 
 ## AsciiDoc-style page
 
-[AsciiDoc-style example](/docs/asciidoc-example/) — Markdown page mirroring the MkDocs AsciiDoc example.
+[AsciiDoc-style example]({site.url('/docs/asciidoc-example/')}) — Markdown page mirroring the MkDocs AsciiDoc example.

@@ -31,6 +31,6 @@ theme:
 ## Cross-references
 
 - [Home](/) — site index
-- [Getting Started](/docs/getting-started/)
+- [Getting Started]({site.url('/docs/getting-started/')})
 
 See the repo **README** for how this POC maps to the MkDocs and Docusaurus checklists.

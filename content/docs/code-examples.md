@@ -1,6 +1,6 @@
 ---
 title: Code Examples
-description: Syntax highlighting, line numbers, copy, tabs, Mermaid — aligned with MkDocs POC
+description: Syntax highlighting, line numbers, copy, tabs, Mermaid
 layout: page
 ---
 
@@ -198,4 +198,4 @@ flowchart LR
 
 > **Warning:** PDF is not built into Roq like MkDocs-with-PDF; use print-to-PDF or a separate pipeline if required.
 
-> **Note:** Internal links: [Getting Started](/docs/getting-started/) or [Installation](#bash-example).
+> **Note:** Internal links: [Getting Started]({site.url('/docs/getting-started/')}) or [Installation](#bash-example).

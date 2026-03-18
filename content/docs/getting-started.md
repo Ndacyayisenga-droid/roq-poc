@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-description: Set up and run the Roq POC (aligned with MkDocs getting-started flow)
+description: Set up and run the Roq POC (getting-started flow)
 layout: page
 ---
 
@@ -82,6 +82,6 @@ roq-poc/
 
 ## Next steps
 
-- [Code Examples](/docs/code-examples/) — Java, YAML, Bash, language-style tabs, Mermaid, tables
-- [Accessibility](/docs/accessibility/) — Practices aligned with the MkDocs POC page
-- [AsciiDoc-style page](/docs/asciidoc-example/) — Same narrative as MkDocs `asciidoc-example.adoc`
+- [Code Examples]({site.url('/docs/code-examples/')}) — Java, YAML, Bash, language-style tabs, Mermaid, tables
+- [Accessibility]({site.url('/docs/accessibility/')}) — Practices page
+- [AsciiDoc-style page]({site.url('/docs/asciidoc-example/')}) — Same narrative as MkDocs `asciidoc-example.adoc`

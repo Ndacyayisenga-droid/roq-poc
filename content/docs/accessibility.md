@@ -1,6 +1,6 @@
 ---
 title: Accessibility
-description: Accessibility notes aligned with the MkDocs POC
+description: Accessibility 
 layout: page
 ---
 
@@ -25,7 +25,7 @@ MkDocs Material offers a built-in light/dark toggle; this POC uses a single sche
 ## Best practices
 
 1. **Heading hierarchy** — Use H1 once per page (title), then H2 → H3; do not skip levels.
-2. **Link text** — Prefer descriptive text, e.g. [Getting Started guide](/docs/getting-started/) instead of “click here”.
+2. **Link text** — Prefer descriptive text, e.g. [Getting Started guide]({site.url('/docs/getting-started/')}) instead of “click here”.
 3. **Images** — Provide `alt` text for meaningful images in Markdown or templates.
 4. **Tables** — Use header rows for data tables.
 5. **Code blocks** — Use language tags (`java`, `yaml`, `bash`) for highlighting and context.
