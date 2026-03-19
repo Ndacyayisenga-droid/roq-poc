@@ -45,7 +45,7 @@ jobs:
           mkdir -p temp-root
           ln -s "$(pwd)/target/roq" temp-root/roq-poc
 
-      - name: Link check (dead links, aligned with mkdocs-poc)
+      - name: Link check (dead links)
         uses: lycheeverse/lychee-action@v2
         with:
           args: >-

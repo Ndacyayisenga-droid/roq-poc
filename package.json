@@ -1,0 +1,18 @@
+{
+  "name": "roq-poc-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "export:pdf": "node scripts/export-pdf.mjs",
+    "build:search": "pagefind --site target/roq --output-path target/roq/pagefind"
+  },
+  "devDependencies": {
+    "pagefind": "^1.1.0",
+    "playwright": "^1.58.2",
+    "mime-types": "^2.1.35"
+  },
+  "engines": {
+    "node": ">=20.0"
+  }
+}
+

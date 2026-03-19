@@ -16,6 +16,6 @@ items:
       - title: "Accessibility"
         path: "/docs/accessibility/"
         icon: "fa-solid fa-universal-access"
-      - title: "AsciiDoc-style example"
+      - title: "AsciiDoc example"
         path: "/docs/asciidoc-example/"
         icon: "fa-solid fa-file-lines"

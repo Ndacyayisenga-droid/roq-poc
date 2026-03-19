@@ -1,23 +1,8 @@
 # Roq POC Documentation Site
 
-Proof of Concept built with **[Quarkus Roq](https://iamroq.com/)**, **aligned with the [MkDocs POC](https://github.com/Ndacyayisenga-droid/mkdocs-poc)** so the same doc set and requirements can be compared (nav: Getting Started, Code Examples, Accessibility, AsciiDoc-style page).
+Proof of Concept built with **[Quarkus Roq](https://iamroq.com/)**, 
 
-## Features vs MkDocs POC
 
-| Requirement | MkDocs POC | This Roq POC |
-|-------------|------------|--------------|
-| Docs-as-Code | `docs/*.md` | `content/docs/*.md`, `content/index.md` |
-| Syntax highlight + line numbers + copy | Material + PyMdown | Prism + `public/js/syntax-highlighting.js` |
-| Code tabs (Bash/YAML/JSON) | pymdownx.tabbed | Same content as stacked sections on [Code Examples](content/docs/code-examples.md) |
-| Mermaid | SuperFences | Mermaid 10 via CDN on Code Examples + home |
-| Search | Material built-in | ○ Not built-in; static HTML — optional client search |
-| PDF | mkdocs-with-pdf | ○ Browser print or external tool |
-| TOC / linkable headers | `toc.permalink` | Sidebar + right TOC (JS) |
-| Responsive | Material | Custom CSS (domtrip-style layout) |
-| Accessibility | `docs/accessibility.md` | Same topics, Roq-specific notes |
-| AsciiDoc | `asciidoc-example.adoc` | [asciidoc-example.md](content/docs/asciidoc-example.md) (Markdown equivalent) |
-| Dead links | Lychee in CI | Lychee on `target/roq/` in CI |
-| CI/CD | gh-deploy | `deploy.yml` → GitHub Pages |
 
 ## Prerequisites
 
@@ -40,14 +25,20 @@ QUARKUS_ROQ_GENERATOR_BATCH=true mvn package quarkus:run -DskipTests
 
 Output: **`target/roq/`**.
 
+## Search + PDF (proof features)
+
+- **Search**: Pagefind, available at `/docs/search/` after deployment (index built in CI).
+- **PDF**: generated in CI and deployed at `/pdf/documentation.pdf`.
+
 ## Project structure
 
 | Path | Purpose |
 |------|---------|
-| **content/** | Pages (mirror MkDocs: index + docs/*) |
+| **content/** | Pages; **AsciiDoc**: `content/docs/asciidoc-example.adoc` (`quarkus-roq-plugin-asciidoc`) |
 | **data/** | `menu.yml`, **`authors.yml`** (required for default theme blog templates) |
 | **public/** | CSS, JS (Prism, layout, Mermaid not needed globally) |
 | **templates/layouts/** | Custom `index` / `page` layouts |
+| **package.json** | Tooling for PDF + search index (Pagefind, Playwright) |
 | **src/main/java** | Minimal CDI bean so Roq resolves project root |
 | **src/main/resources/application.properties** | Site + generator config |
 

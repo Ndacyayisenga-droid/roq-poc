@@ -1,0 +1,36 @@
+= AsciiDoc example
+:description: Native AsciiDoc in Roq (quarkus-roq-plugin-asciidoc)
+:page-layout: page
+
+This page is written in *AsciiDoc* (`.adoc`) and rendered by **Quarkus Roq** using the `quarkus-roq-plugin-asciidoc` extension — not Markdown.
+
+== Why AsciiDoc?
+
+AsciiDoc offers:
+
+* Strong semantics (sections, admonitions, cross-references)
+* Good fit for long-form technical docs and books
+* Output to HTML, PDF, and more via Asciidoctor
+
+== Quick example
+
+A minimal YAML snippet:
+
+[source,yaml]
+----
+site_name: MkDocs POC
+docs_dir: docs
+theme:
+  name: material
+----
+
+== Cross-references
+
+You can link to other pages (paths are relative to this doc URL):
+
+* link:../../[Home]
+* link:../getting-started/[Getting Started]
+
+See the repo **README** for how this POC compares to MkDocs and Docusaurus.
+
+NOTE: Roq processes `.adoc` files when the AsciiDoc plugin is on the classpath; see `pom.xml`.

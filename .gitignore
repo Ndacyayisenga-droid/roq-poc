@@ -1,6 +1,8 @@
 # Build
 target/
 temp-root/
+node_modules/
+package-lock.json
 
 # Quarkus
 .quarkus/

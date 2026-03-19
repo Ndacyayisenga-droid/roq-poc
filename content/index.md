@@ -20,6 +20,6 @@ Welcome to the Roq POC docs. Use the sidebar or the links below to navigate.
 
 [Accessibility]({site.url('/docs/accessibility/')}) — Layout, keyboard navigation, headings, responsive design.
 
-## AsciiDoc-style page
+## AsciiDoc example
 
-[AsciiDoc-style example]({site.url('/docs/asciidoc-example/')}) — Markdown page mirroring the MkDocs AsciiDoc example.
+[AsciiDoc example]({site.url('/docs/asciidoc-example/')}) — Native `.adoc` page (`quarkus-roq-plugin-asciidoc`), same idea as MkDocs `asciidoc-example.adoc`.

@@ -19,7 +19,7 @@ This guide mirrors the **MkDocs POC** [Getting Started](https://github.com/Ndacy
 ### Step 1: Clone the repository
 
 ```bash
-git clone https://github.com/your-org/roq-poc.git
+git clone https://github.com/Ndacyayisenga-droid/roq-poc.git
 cd roq-poc
 ```
 
@@ -84,4 +84,4 @@ roq-poc/
 
 - [Code Examples]({site.url('/docs/code-examples/')}) — Java, YAML, Bash, language-style tabs, Mermaid, tables
 - [Accessibility]({site.url('/docs/accessibility/')}) — Practices page
-- [AsciiDoc-style page]({site.url('/docs/asciidoc-example/')}) — Same narrative as MkDocs `asciidoc-example.adoc`
+- [AsciiDoc example]({site.url('/docs/asciidoc-example/')}) — Native `.adoc` (MkDocs uses the same filename with its plugin)
